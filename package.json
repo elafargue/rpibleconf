@@ -1,0 +1,29 @@
+{
+  "name": "rpibleconf",
+  "description": "Configure a Raspberry Pi Wifi via BLE",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bleno": "^0.4.2",
+    "debug": "^2.6.8",
+    "raspbian-wifi-manager": "git+https://github.com/wizkers/raspbian-wifi-manager.git"
+  },
+  "devDependencies": {
+    "amd-optimize": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-change": "^1.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-debug": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-tap": "^1.0.*"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}

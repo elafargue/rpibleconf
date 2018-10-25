@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.wizkers.rpiconfig" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <hook src="hooks/hookers.js" type="before_prepare"/>
+    <hook src="hooks/beforedep.js" type="before_deploy"/>
+    <name>ConfiBLE</name>
+    <description>
+        Fast configuration of embedded devices over BLE
+    </description>
+    <author email="ed@wizkers.io" href="http://wizkers.io">
+        Ed Lafargue and the Wizkers.io team
+    </author>
+    <content src="index.html"/>
+    <plugin name="cordova-plugin-whitelist" spec="1"/>
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*"/>
+        <allow-intent href="itms-apps:*"/>
+    </platform>
+    <allow-navigation href="*"/>
+    <plugin name="cordova-plugin-bluetoothle" spec="~4.4.2"/>
+    <plugin name="cordova-plugin-device" spec="~1.1.6"/>
+</widget>
